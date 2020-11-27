@@ -1,4 +1,4 @@
-@import "../base/variables";
+@import "base/variables";
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;    
 }
@@ -6,3 +6,5 @@
     max-width: 950px;
     margin: 0 auto;
 }
+@import "blocks/promo";
+@import "blocks/header"
