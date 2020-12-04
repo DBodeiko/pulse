@@ -14,16 +14,30 @@
         justify-content: space-between;
     }
     &__icon {
-        width: 253px;
+        width: 221px;
         text-align: center;
-        &__subtitle {
-            font-size: 18px;
-            font-weight: 700;
-            
-        }
         img {
             display: block;
             margin: 0 auto;
         }
     }
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 700;  
+        margin-top: 38px;      
+    }
+    &__text {
+        margin-top: 26px;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 300;
+        a {
+            color: $main-color;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+    }
+        
+
+        
 }
