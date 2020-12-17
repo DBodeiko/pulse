@@ -1,0 +1,36 @@
+@media (max-width: 991px){
+    .promo {
+        padding: 10px 15px;
+    }
+    .advantages {
+        padding: 70px 15px;
+    }
+}
+@media (max-width: 767px){
+    .header{
+        &__official{
+            display: none;
+        }
+    }
+    .promo{
+        &__wrapper{
+            align-items:center;
+        }
+    }
+}
+@media (max-width: 575px){
+   .header{
+       flex-direction: column;
+       &__phone{
+           margin-top: 20px;
+       }
+    .promo{
+        &__wrapper{
+            text-align: center;
+        }
+        &__icons{
+            width: 308px;
+        }
+    }
+   } 
+}
