@@ -5,6 +5,20 @@
     .advantages {
         padding: 70px 15px;
     }
+    .feed-form{
+        width: 100%;
+        align-items: center;
+    }
+    .title{
+        &_left{
+            text-align: center;
+        }
+    }
+    .consultation{
+        &__descr{
+            text-align: center;
+        }
+    }
 }
 @media (max-width: 767px){
     .header{
