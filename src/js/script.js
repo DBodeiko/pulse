@@ -1,4 +1,4 @@
-/* $(document).ready(function(){
+$(document).ready(function(){
     $('.carousel__inner').slick({
         speed: 1200,
         
@@ -14,10 +14,4 @@
             }    
         ]
     });
-}); */
-var slider = tns({
-    container: '.carousel__inner',
-    items: 1,
-    slideBy: 'page',
-    autoplay: true
-  });
+});
