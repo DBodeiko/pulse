@@ -19,6 +19,7 @@
             text-align: center;
         }
     }
+
 }
 @media (max-width: 767px){
     .header{
@@ -31,6 +32,33 @@
             align-items:center;
         }
     }
+    .carousel {
+        display: none;
+
+
+        
+    }
+    .catalog {
+        &__tab {
+            width: 150px;
+            height: 40px;
+            font-size: 14px;
+            line-height: 38px;
+        }
+        &__content {
+            justify-content: space-around;
+        }
+    }
+    
+    
+    .reviews {
+        &__content {
+            padding: 0;
+        }
+        &-item {
+            padding: 71px 20px 31px 20px; 
+        }
+    }
 }
 @media (max-width: 575px){
    .header{
@@ -38,6 +66,7 @@
        &__phone{
            margin-top: 20px;
        }
+    }
     .promo{
         &__wrapper{
             text-align: center;
@@ -45,6 +74,52 @@
         &__icons{
             width: 308px;
         }
+    
     }
-   } 
+    .catalog {
+        &__tab {
+            width: 110px;
+            height: 35px;
+            font-size: 10px;
+            line-height: 35px;
+        }
+        &__content {
+            justify-content: center;
+        }
+    }
+    .reviews {
+        &-item {
+            padding: 30px 20px 0 20px;
+            &__wrapper {
+                flex-direction: column;
+                align-items:center;
+            }
+        }
+        &-descr {
+            padding: 20px 0 0 0;
+            text-align: center;
+        }
+    } 
+    .footer {
+        &__info {
+            padding: 10px 28px 18px 28px;
+            width: 300px;
+            height: 174px;
+            
+        }
+        &__addr {
+            font-size: 15px;
+        }
+        &__phone {
+            font-size: 15px;
+        
+        }
+        &__social-item{
+            width: 30px;
+            height: 30px; 
+            img {
+                height:18px;
+            }
+        }
+    }
 }
