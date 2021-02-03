@@ -16,7 +16,9 @@
     "url": "https://github.com/DBodeiko/pulse/issues"
   },
   "homepage": "https://github.com/DBodeiko/pulse#readme",
-  "dependencies": {},
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  },
   "devDependencies": {
     "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
