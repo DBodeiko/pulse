@@ -47,6 +47,11 @@ $(document).ready(function(){
     $('.modal__close').on('click', function(){
         $('.overlay, #consultation, #thanks, #order').fadeOut('slow')
     });
+    $('.overlay').click( function (e) { 
+        if ( e.target == this )
+        {$('.overlay, #consultation, #thanks, #order').fadeOut('slow')}
+    });
+
     $('.button_mini').each(function(i){
         $(this).on('click', function(){
            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
@@ -71,13 +76,13 @@ $(document).ready(function(){
             },
             messages: {
                 name: {
-                    required: "Пожалуйста, введите свое имя",
-                    minlength: jQuery.validator.format("Введите {0} символа!")
+                    required: "Please enter your name",
+                    minlength: jQuery.validator.format("Enter {0} symbols!")
                   },
-                phone: "Пожалуйста, введите свой номер телефона",
+                phone: "Please enter your phone number",
                 email: {
-                  required: "Пожалуйста, введите свою почту",
-                  email: "Неправильно введен адрес почты"
+                  required: "Please enter your email",
+                  email: "Email address entered incorrectly"
                 }
             }
         });
@@ -125,4 +130,6 @@ $(document).ready(function(){
 
     new WOW().init();
 });
+
+
 
